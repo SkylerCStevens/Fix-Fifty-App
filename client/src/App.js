@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Counter from "./containers/Counter/Counter";
-import Home from "./pages/Home";
-import Jobs from "./pages/Jobs";
-import Reviews from "./pages/Reviews";
-import Users from "./pages/Users";
+import Home from "./pages/userPages/Home";
+import Jobs from "./pages/userPages/Jobs";
+import Reviews from "./pages/userPages/Reviews";
+import Users from "./pages/userPages/Users";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import Login from "./loginPage/Login"
+import Login from "./pages/loginPage/Login"
 
 function App() {
   return (
