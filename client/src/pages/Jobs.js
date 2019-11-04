@@ -10,7 +10,7 @@ class Jobs extends React.Component {
     axios
       .get("/jobs")
       .then(res => {
-        this.setState({ contacts: res.data.jobs }, () => console.log(res.data));
+        this.setState({ jobs: res.data.jobs }, () => console.log(res.data));
       })
 
       .catch(err => {

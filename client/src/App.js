@@ -8,6 +8,7 @@ import Reviews from "./pages/Reviews";
 import Users from "./pages/Users";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import Login from "./loginPage/Login"
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
           <Route path="/jobs" component={Jobs} />
           <Route path="/reviews" component={Reviews} />
           <Route path="/counter" component={Counter} />
+          <Route path="/login" component={Login} />
+
         </Switch>
         <Footer />
       </Router>
