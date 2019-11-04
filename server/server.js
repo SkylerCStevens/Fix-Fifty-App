@@ -1,5 +1,9 @@
+require("dotenv").config();
+
 const express = require("express");
 const logger = require("morgan");
+const GoogleStrategy = require("passport-google-oauth20").Strategy;
+const passport = require("passport");
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -18,4 +22,19 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
+// passport.use(
+//   new GoogleStrategy(
+//     {
+//       clientID: process.env.CLIENT_ID,
+//       clientSecret: process.env.CLIENT_SECRET,
+//       callbackURL: "http://localhost:3000/",
+//       userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo"
+//     },
+//     (accessToken, refreshToken, profile, cb) => {
+//       User.findOrCreate({ googleId: profile.id }, (err, user) => {
+//         return cb(err, user);
+//       });
+//     }
+//   )
+// );
 app.listen(port, () => console.log(`Listening on port ${port}`));
