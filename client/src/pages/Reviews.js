@@ -6,17 +6,17 @@ class Reviews extends React.Component {
         reviews: []
     }
 
-    componentDidMount() {
-        axios
-          .get("/reviews")
-          .then(res => {
-            this.setState({ reviews: res.data.reviews }, () => console.log(res.data));
-          })
+    // componentDidMount() {
+    //     axios
+    //       .get("/reviews")
+    //       .then(res => {
+    //         this.setState({ reviews: res.data.reviews }, () => console.log(res.data));
+    //       })
     
-          .catch(err => {
-            console.log(err);
-          });
-      }
+    //       .catch(err => {
+    //         console.log(err);
+    //       });
+    //   }
 
 
     render () {

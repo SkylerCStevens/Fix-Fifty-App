@@ -6,17 +6,17 @@ class Users extends React.Component {
   };
 
 
-  componentDidMount() {
-    axios
-      .get("/user")
-      .then(res => {
-        this.setState({ user: res.data.user }, () => console.log(res.data));
-      })
+  // componentDidMount() {
+  //   axios
+  //     .get("/user")
+  //     .then(res => {
+  //       this.setState({ user: res.data.user }, () => console.log(res.data));
+  //     })
 
-      .catch(err => {
-        console.log(err);
-      });
-  }
+  //     .catch(err => {
+  //       console.log(err);
+  //     });
+  // }
 
   render() {
     return (
