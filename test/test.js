@@ -48,7 +48,7 @@ describe("Checking if hashing is correct", () => {
     );
   });
 
-  it("POST - Login in an incorrect user", done => {
+  it("POST - Login in an incorrect user password", done => {
     request.post(
       {
         url: "http://localhost:3000/login",
@@ -59,6 +59,22 @@ describe("Checking if hashing is correct", () => {
       },
       (err, httpResponse, body) => {
         expect(body).to.equal("Password is incorrect");
+        done();
+      }
+    );
+  });
+
+  it("POST - Login in an incorrect user username", done => {
+    request.post(
+      {
+        url: "http://localhost:3000/login",
+        form: {
+          username: "hi@gmail",
+          password: "password12"
+        }
+      },
+      (err, httpResponse, body) => {
+        expect(body).to.equal("User not found");
         done();
       }
     );
