@@ -41,6 +41,9 @@ app.use("/register", register);
 const login = require("./login/login");
 app.use("/login", login);
 
+const job = require("./job/job");
+app.use("/job", job);
+
 // passport.use(
 //   new GoogleStrategy(
 //     {
