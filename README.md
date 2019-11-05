@@ -4,5 +4,8 @@ With Charlotte dead last (50) on the list of largest cities in the United States
 ## Reaching the Community
 We are working to connect with local non-profits to find the individuals who need this app, as well as ensure they have the necessary resources to access it. Our first thought was NC Works. This organization has facilities where individuals can use computers to apply for jobs. It is usually where citizens in unemployment are directed. We also found the Goodwill Opportunity Center which has a job resource branch to help people find employment. By working with these kinds of programs we can reach our audience and help these centers quickly find solutions for those in need.
 
-### Our Team
+## Our Team
 Skyler Stevens, Lucy Yang, Jonathan Morales, Aaliyah McCray, Jonathan Giler
+
+## License
+[MIT](https://github.com/SkylerCStevens/Fix-Fifty-App/blob/master/LICENSE)
