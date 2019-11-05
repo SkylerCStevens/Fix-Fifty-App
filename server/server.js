@@ -6,6 +6,9 @@ const mongoose = require("mongoose");
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
 const passport = require("passport");
 
+const bcrypt = require("bcrypt");
+const saltRounds = 10;
+
 const app = express();
 const port = process.env.PORT || 5000;
 
