@@ -23,6 +23,10 @@ const Nav = () => (
     <NavLink className="navbar-brand" exact to="/counter">
       Counter
     </NavLink>
+
+    <NavLink className="navbar-brand" exact to="/login">
+      Login
+    </NavLink>
   </nav>
 );
 

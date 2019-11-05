@@ -8,15 +8,15 @@ class Jobs extends React.Component {
   };
 
   componentDidMount() {
-    axios
-      .get("/jobs")
-      .then(res => {
-        this.setState({ contacts: res.data.jobs }, () => console.log(res.data));
-      })
+    // axios
+    //   .get("/jobs")
+    //   .then(res => {
+    //     this.setState({ jobs: res.data.jobs }, () => console.log(res.data));
+    //   })
 
-      .catch(err => {
-        console.log(err);
-      });
+    //   .catch(err => {
+    //     console.log(err);
+    //   });
   }
 
   render() {
