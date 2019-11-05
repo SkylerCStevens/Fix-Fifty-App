@@ -1,10 +1,15 @@
 import React from 'react';
+import "./User.css";
 
 const Users = () => {
     return (
         <React.Fragment>
-            <h1>Users</h1>
+            <Nav/>
+            <h1> Hello Users</h1>
+            <h2>Log in or make an account</h2>
             {console.log('Users')}
+            <Login/>
+            <Footer/>
         </React.Fragment>
     )
 }
