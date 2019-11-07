@@ -2,22 +2,9 @@ const router = require("express").Router();
 const User = require("../../models/user.model");
 const passport = require("passport")
 
-router.post("/", (req, res) => {
-  
-  const user = new User({
-    username: req.body.username,
-    password: req.body.password
-  })
-
-  req.login(user, (err) => {
-    if (err) {
-      console.log(err)
-    } else {
-      passport.authenticate("local")(req, res, () => {
-        res.send(user);
-      });
-    }
-  })
+router.get("/", (req, res) => {
+  req.logout()
+  res.send("hi")
 });
 
 router.delete("/", (req, res) => {
