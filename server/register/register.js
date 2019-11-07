@@ -1,19 +1,44 @@
 const router = require("express").Router();
 const User = require("../../models/user.model");
+const passport = require("passport");
 
-const bcrypt = require("bcrypt");
-const saltRounds = 10;
 
 router.post("/", (req, res) => {
-  bcrypt.hash(req.body.password, saltRounds, (err, hash) => {
-    // Store hash in your password DB.
-    User.create({
-      ...req.body,
-      password: hash
-    })
-      .then(() => res.send(`${req.body.firstName} ${req.body.lastName} has signed up`))
-      .catch(err => res.status(500).json(err));
-  });
+  User.register(
+    { username: req.body.username },
+    req.body.password,
+    (err, user) => {
+      if (err) {
+        console.log(err);
+        console.log(req.body.password)
+        console.log("hiiii")
+        res.status(404).send(err.message);
+      } else {
+        passport.authenticate("local")(req, res, () => {
+          res.send(user);
+        });
+      }
+    }
+  );
 });
+
+// router.delete("/", (req, res) => {
+//   User.register(
+//     { username: req.body.username },
+//     req.body.password,
+//     (err, user) => {
+//       if (err) {
+//         console.log(err);
+//         console.log(req.body.password)
+//         console.log("hiiii")
+//         res.status(404).send(err.message);
+//       } else {
+//         passport.authenticate("local")(req, res, () => {
+//           res.send(user);
+//         });
+//       }
+//     }
+//   );
+// });
 
 module.exports = router;
