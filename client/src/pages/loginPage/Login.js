@@ -38,6 +38,9 @@ const Login = () => {
             <input type="password" name="password" onChange={(e) => setPassword(e.target.value)}/>
           </div>
           <button type="button" onClick={handleForm}>Login</button>
+          <div>
+            <a href="/auth/google">Google Login</a>
+          </div>
         </form>
       </React.Fragment>
     );

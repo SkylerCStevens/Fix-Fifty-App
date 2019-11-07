@@ -7,6 +7,7 @@ const GoogleStrategy = require("passport-google-oauth20").Strategy;
 const passport = require("passport");
 const session = require("express-session");
 const User = require("../models/user.model");
+const findOrCreate = require('mongoose-findorcreate')
 
 
 const app = express();
@@ -55,6 +56,20 @@ passport.use(User.createStrategy());
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
+passport.use(
+  new GoogleStrategy(
+    {
+      clientID: process.env.CLIENT_ID,
+      clientSecret: process.env.CLIENT_SECRET,
+      callbackURL: "http://localhost:3000/"
+    },
+    (accessToken, refreshToken, profile, cb) => {
+      User.findOrCreate({ googleId: profile.id }, (err, user) => {
+        return cb(err, user);
+      });
+    }
+  )
+);
 // connection to database
 mongoose.connect(process.env.CONNECTION_STRING, {
   useNewUrlParser: true,
@@ -81,20 +96,6 @@ app.use("/logout", login);
 const job = require("./job/job");
 app.use("/job", job);
 
-// passport.use(
-//   new GoogleStrategy(
-//     {
-//       clientID: process.env.CLIENT_ID,
-//       clientSecret: process.env.CLIENT_SECRET,
-//       callbackURL: "http://localhost:3000/",
-//       userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo"
-//     },
-//     (accessToken, refreshToken, profile, cb) => {
-//       User.findOrCreate({ googleId: profile.id }, (err, user) => {
-//         return cb(err, user);
-//       });
-//     }
-//   )
-// );
+
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
