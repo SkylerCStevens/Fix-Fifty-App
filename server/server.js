@@ -5,9 +5,9 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
 const passport = require("passport");
+const session = require("express-session");
+const User = require("../models/user.model");
 
-const bcrypt = require("bcrypt");
-const saltRounds = 10;
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -25,6 +25,36 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.join(__dirname, "../client/build/index.html"));
   });
 }
+
+// app.use(
+//   session({
+//     secret: "secret",
+//     resave: false,
+//     saveUninitialized: true,
+//     cookie: { secure: true }
+//   })
+// );
+
+// Express session to use cookies
+app.use(
+  session({
+    secret: "secret",
+    resave: false,
+    saveUninitialized: true
+  })
+);
+
+// Initializing passport
+app.use(passport.initialize());
+// Allowing passport to use sessions
+app.use(passport.session());
+
+// CHANGE: USE "createStrategy" INSTEAD OF "authenticate"
+passport.use(User.createStrategy());
+
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
+
 // connection to database
 mongoose.connect(process.env.CONNECTION_STRING, {
   useNewUrlParser: true,
@@ -38,11 +68,15 @@ connection.once("open", () => {
 });
 mongoose.set("useFindAndModify", false);
 
+
 const register = require("./register/register");
 app.use("/register", register);
 
 const login = require("./login/login");
 app.use("/login", login);
+
+const logout = require("./logout/logout");
+app.use("/logout", login);
 
 const job = require("./job/job");
 app.use("/job", job);
