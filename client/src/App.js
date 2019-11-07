@@ -7,9 +7,9 @@ import Reviews from "./pages/userPages/Reviews";
 import Users from "./pages/userPages/Users";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import Joblistings from"./components/Joblistings";
-import Login from"./components/Login";
-import Signup from"./components/Signup";
+import Joblistings from "./components/Joblistings";
+import Login from "./pages/loginPage/Login";
+import Signup from "./components/Signup";
 
 function App() {
   return (

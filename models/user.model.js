@@ -10,7 +10,8 @@ const userSchema = new Schema({
     trim: true,
     required: "There has to be a username",
     unique: true
-  }
+  },
+  googleId: String
 });
 
 userSchema.plugin(passportLocalMongoose);

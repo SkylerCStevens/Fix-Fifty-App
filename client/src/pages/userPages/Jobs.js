@@ -1,6 +1,5 @@
 import React from "react";
 import axios from "axios";
-import "./Jobs.css";
 
 class Jobs extends React.Component {
   state = {
@@ -22,10 +21,8 @@ class Jobs extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Nav/>
         <h1>Jobs</h1>
 
-        <Footer/>
       </React.Fragment>
 
      

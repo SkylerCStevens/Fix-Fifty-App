@@ -7,8 +7,6 @@ const GoogleStrategy = require("passport-google-oauth20").Strategy;
 const passport = require("passport");
 const session = require("express-session");
 const User = require("../models/user.model");
-const findOrCreate = require('mongoose-findorcreate')
-
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -50,18 +48,32 @@ app.use(passport.initialize());
 // Allowing passport to use sessions
 app.use(passport.session());
 
+// connection to database
+mongoose.connect(process.env.CONNECTION_STRING, {
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useUnifiedTopology: true
+});
 // CHANGE: USE "createStrategy" INSTEAD OF "authenticate"
 passport.use(User.createStrategy());
 
-passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser());
+passport.serializeUser((user, done) => {
+  done(null, user.id);
+});
+
+passport.deserializeUser((id, done) => {
+  User.findById(id, (err, user) => {
+    done(err, user);
+  });
+});
 
 passport.use(
   new GoogleStrategy(
     {
       clientID: process.env.CLIENT_ID,
       clientSecret: process.env.CLIENT_SECRET,
-      callbackURL: "http://localhost:3000/"
+      callbackURL: "http://localhost:3000",
+      userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo"
     },
     (accessToken, refreshToken, profile, cb) => {
       User.findOrCreate({ googleId: profile.id }, (err, user) => {
@@ -70,12 +82,6 @@ passport.use(
     }
   )
 );
-// connection to database
-mongoose.connect(process.env.CONNECTION_STRING, {
-  useNewUrlParser: true,
-  useCreateIndex: true,
-  useUnifiedTopology: true
-});
 
 const connection = mongoose.connection;
 connection.once("open", () => {
@@ -83,6 +89,8 @@ connection.once("open", () => {
 });
 mongoose.set("useFindAndModify", false);
 
+const auth = require("./auth/auth")
+app.use("/auth", auth);
 
 const register = require("./register/register");
 app.use("/register", register);
@@ -95,7 +103,5 @@ app.use("/logout", login);
 
 const job = require("./job/job");
 app.use("/job", job);
-
-
 
 app.listen(port, () => console.log(`Listening on port ${port}`));

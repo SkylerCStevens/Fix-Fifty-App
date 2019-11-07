@@ -1,5 +1,4 @@
 import React from "react";
-import "./Joblistings.css";
 
 
 function Joblistings() {
