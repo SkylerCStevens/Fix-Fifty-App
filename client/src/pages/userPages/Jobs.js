@@ -25,6 +25,8 @@ class Jobs extends React.Component {
         <Nav/>
         <h1>Jobs</h1>
 
+        <h2></h2>
+
 
         
 
