@@ -25,6 +25,9 @@ class Jobs extends React.Component {
         <Nav/>
         <h1>Jobs</h1>
 
+
+        
+
         <Footer/>
       </React.Fragment>
 
