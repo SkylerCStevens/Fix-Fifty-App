@@ -30,12 +30,8 @@
     "express": "^4.17.1",
     "express-session": "^1.17.0",
     "if-env": "^1.0.4",
-<<<<<<< HEAD
     "mongoose": "^5.7.9",
     "mongoose-encryption": "^2.0.2",
-=======
-    "mongoose": "^5.7.8",
->>>>>>> bd0ef508761b3918811c45a7f72e36bc0015ac67
     "mongoose-findorcreate": "^3.0.0",
     "passport": "^0.4.0",
     "passport-google-oauth20": "^2.0.0",
