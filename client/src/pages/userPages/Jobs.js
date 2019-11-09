@@ -1,6 +1,8 @@
 import React from "react";
 import axios from "axios";
-import "./Jobs.css";
+// import "./Jobs.css";
+import Nav from '../../components/Nav'
+import Footer from '../../components/Footer'
 
 class Jobs extends React.Component {
   state = {

@@ -8,7 +8,7 @@ import Users from "./pages/userPages/Users";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Joblistings from"./components/Joblistings";
-import Login from"./components/Login";
+// import Login from"./components/Login";
 import Signup from"./components/Signup";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
           <Route path="/jobs" component={Jobs} />
           <Route path="/reviews" component={Reviews} />
           <Route path="/counter" component={Counter} />
-          <Route path="/Login" component={Login}/>
+          {/* <Route path="/Login" component={Login}/> */}
           <Route path="/Signup" component={Signup}/>
           <Route path="/Joblistings" component={Joblistings}/>
         </Switch>

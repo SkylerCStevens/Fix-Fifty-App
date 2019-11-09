@@ -1,5 +1,5 @@
 import React from "react";
-import "./Joblistings.css";
+// import "./Joblistings.css";
 
 
 function Joblistings() {

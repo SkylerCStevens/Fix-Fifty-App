@@ -29,7 +29,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
-    "mongoose": "^5.7.7",
+    "mongoose": "^5.7.9",
     "mongoose-encryption": "^2.0.2",
     "mongoose-findorcreate": "^3.0.0",
     "passport": "^0.4.0",
