@@ -1,29 +1,34 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+// import "./Nav.css";
 
 const Nav = () => (
-  <nav className="navbar navbar-expand-lg navbar-light bg-light">
-    <NavLink exact to="/" className="logo">
-      Home
+  <nav className="nav">
+    <NavLink exact to="/" className="link">
+      <img 
+      className='logo'
+      src={require('../img/logo.png')} 
+      alt='clymb logo'
+      ></img>
     </NavLink>
 
-    <NavLink className="navbar-brand" exact to="/users">
+    <NavLink className="link" exact to="/users">
       Users
     </NavLink>
 
-    <NavLink className="navbar-brand" exact to="/jobs">
+    <NavLink className="link" exact to="/jobs">
       Jobs
     </NavLink>
 
-    <NavLink className="navbar-brand" exact to="/reviews">
+    <NavLink className="link" exact to="/reviews">
       Reviews
     </NavLink>
 
-    <NavLink className="navbar-brand" exact to="/counter">
+    <NavLink className="link" exact to="/counter">
       Counter
     </NavLink>
 
-    <NavLink className="navbar-brand" exact to="/login">
+    <NavLink className="link" exact to="/login">
       Login
     </NavLink>
   </nav>

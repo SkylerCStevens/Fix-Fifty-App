@@ -1,16 +1,17 @@
 import React from 'react'
+import axios from 'axios'
 
-class Profile extends React.Component {
+class Rate extends React.Component {
 
     state = {
-        profile: []
+        rates: []
     }
 
     componentDidMount() {
         axios
-          .get("/profile")
+          .get("/rates")
           .then(res => {
-            this.setState({ profile: res.data.profile }, () => console.log(res.data));
+            this.setState({ rates: res.data.rates }, () => console.log(res.data));
           })
     
           .catch(err => {
@@ -18,13 +19,16 @@ class Profile extends React.Component {
           });
       }
 
+
+
+
     render() {
         return (
             <React.Fragment>
-                <h1>Profile</h1> 
+                <h1>Rate</h1>
             </React.Fragment>
         )
     }
 }
 
-export default Profile;
+export default Rate

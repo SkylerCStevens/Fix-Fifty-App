@@ -23,10 +23,16 @@
   },
   "homepage": "https://github.com/SkylerCStevens/Fix-Fifty-App#readme",
   "dependencies": {
+    "axios": "^0.19.0",
+    "bcrypt": "^3.0.6",
     "concurrently": "^5.0.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
+    "mongoose": "^5.7.9",
+    "mongoose-encryption": "^2.0.2",
+    "mongoose-findorcreate": "^3.0.0",
+    "passport": "^0.4.0",
     "passport-google-oauth20": "^2.0.0"
   },
   "devDependencies": {

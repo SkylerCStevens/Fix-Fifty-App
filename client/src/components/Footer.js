@@ -2,9 +2,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+
 const Footer = () => (
   <footer >
-    <h1>Footer</h1>
+    <h1>Follow Us </h1>
+    
+    <p></p>
   </footer>
 );
 

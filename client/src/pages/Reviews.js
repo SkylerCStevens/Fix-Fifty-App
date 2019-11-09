@@ -1,32 +1,15 @@
 import React from 'react';
+import "./Reviews.css";
 
-class Reviews extends React.Component {
-
-    state = {
-        reviews: []
-    }
-
-    // componentDidMount() {
-    //     axios
-    //       .get("/reviews")
-    //       .then(res => {
-    //         this.setState({ reviews: res.data.reviews }, () => console.log(res.data));
-    //       })
-    
-    //       .catch(err => {
-    //         console.log(err);
-    //       });
-    //   }
-
-
-    render () {
-
+const Reviews = () => {
     return (
         <React.Fragment>
+            <Nav/>
             <h1>Reviews</h1>
+
+            <Footer/>
         </React.Fragment>
     )
-    }
 }
 
 export default Reviews

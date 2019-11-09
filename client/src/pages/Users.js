@@ -1,31 +1,17 @@
-import React from "react";
+import React from 'react';
+import "./User.css";
 
-class Users extends React.Component {
-  state = {
-    user: [],
-  };
-
-
-  // componentDidMount() {
-  //   axios
-  //     .get("/user")
-  //     .then(res => {
-  //       this.setState({ user: res.data.user }, () => console.log(res.data));
-  //     })
-
-  //     .catch(err => {
-  //       console.log(err);
-  //     });
-  // }
-
-  render() {
+const Users = () => {
     return (
-      <React.Fragment>
-        <h1>Users</h1>
-        {console.log("Users")}
-      </React.Fragment>
-    );
-  }
+        <React.Fragment>
+            <Nav/>
+            <h1> Hello Users</h1>
+            <h2>Log in or make an account</h2>
+            {console.log('Users')}
+            <Login/>
+            <Footer/>
+        </React.Fragment>
+    )
 }
 
-export default Users;
+export default Users
