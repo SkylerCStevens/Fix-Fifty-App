@@ -1,37 +1,21 @@
-require("dotenv").config();
-
 const mongoose = require("mongoose");
-encrypt = require("mongoose-encryption");
+const passportLocalMongoose = require("passport-local-mongoose");
+const findOrCreate = require("mongoose-findorcreate");
 
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
-  firstName: {
+  username: {
     type: String,
     trim: true,
-    required: "There has to be a First Name"
-  },
-  lastName: {
-    type: String,
-    trim: true,
-    required: "There has to be a Last Name"
-  },
-  email: {
-    type: String,
-    trim: true,
-    required: "There has to be an email address",
+    required: "There has to be a username",
     unique: true
   },
-  password: {
-    type: String,
-    trim: true,
-    required: "There has to be a password"
-  }
+  googleId: String
 });
 
-const secret = process.env.SECRET;
-
-userSchema.plugin(encrypt, { secret: secret, encryptedFields: ["password"] });
+userSchema.plugin(passportLocalMongoose);
+userSchema.plugin(findOrCreate);
 
 const User = mongoose.model("user", userSchema);
 

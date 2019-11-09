@@ -23,6 +23,11 @@ const Home = () => {
 
             </div>
 
+            <div>
+            <h2>Meet Our Team</h2>
+
+            </div>
+
             <Footer/>
         </React.Fragment>
     )
