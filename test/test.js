@@ -4,10 +4,8 @@ const request = require("request");
 describe("Checking if hashing is correct", () => {
   before(() => {
     request.post({
-      url: "http://localhost:5000/register",
+      url: "http://localhost:3000/register",
       form: {
-        firstName: "Kurt",
-        lastName: "Kobain",
         email: "hi@gmail.com",
         password: "password123"
       }
@@ -19,8 +17,6 @@ describe("Checking if hashing is correct", () => {
       {
         url: "http://localhost:5000/register",
         form: {
-          firstName: "Marshall",
-          lastName: "Mathers",
           email: "mm@gmail.com",
           password: "password123"
         }
@@ -85,6 +81,13 @@ describe("Checking if hashing is correct", () => {
       url: "http://localhost:5000/login",
       form: {
         username: "hi@gmail.com",
+        password: "password123"
+      }
+    });
+    request.delete({
+      url: "http://localhost:5000/login",
+      form: {
+        username: "mm@gmail.com",
         password: "password123"
       }
     });

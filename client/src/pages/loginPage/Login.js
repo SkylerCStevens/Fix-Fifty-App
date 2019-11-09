@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from 'axios';
+
 
 const Login = () => {
   const [firstName, setFirstName] = useState();
@@ -31,7 +31,7 @@ const Login = () => {
           </div>
           <div>
             <label htmlFor="email">Email</label>
-            <input type="email" name="username" onChange={(e) => setEmail(e.target.value)}/>
+            <input type="email" name="username" placeholder="John345" onChange={(e) => setEmail(e.target.value)}/>
           </div>
           <div>
             <label htmlFor="password">Password</label>
