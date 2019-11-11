@@ -26,4 +26,4 @@ router.delete("/delete/:id", async (req, res) => {
   }
 });
 
-// PUT: edit user information
+module.exports = router;
