@@ -1,3 +1,4 @@
+@media only screen and (max-width: 425px){
 nav{
     position: fixed;
     bottom: 0;
@@ -12,4 +13,5 @@ a{
    text-decoration: none;
    font-family: roboto;
    color: black;
+}
 }
