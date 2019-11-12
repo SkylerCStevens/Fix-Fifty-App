@@ -6,7 +6,7 @@ const Nav = () => (
     <NavLink exact to="/" className="link">
       <img
         className='logo'
-        src={require('../img/logo.png')}
+        src=""
         alt='clymb logo'
       ></img>
     </NavLink>

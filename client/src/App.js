@@ -15,6 +15,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+      <Nav />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/users" component={Users} />
@@ -25,7 +26,6 @@ function App() {
           <Route path="/Signup" component={Signup} />
           <Route path="/Joblistings" component={Joblistings} />
         </Switch>
-        <Nav />
         <Footer />
       </Router>
     </div>
