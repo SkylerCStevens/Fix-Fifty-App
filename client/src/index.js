@@ -1,18 +1,38 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
-import App from "./App";
+
+import "./assets/styles/styles.scss";
 import reducer from "./store/reducer";
-import './css/nav.css'
-import './css/reset.css'
+import Home from "./components/Home";
+import Header from "./components/Layout/Header";
+import Login from "./components/Login";
+import Signup from "./components/Register";
+import Footer from "./components/Layout/Footer";
 
+// creating a store for redux with the redux chrome extension
+export const store = createStore(
+  reducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
-const store = createStore(reducer);
+const Routing = (
+  <Router>
+    <Header />
+    <Switch>
+      <main>
+        <Route path="/" exact component={Home} />
+        <Route path="/login" component={Login} />
+        <Route path="/signup" component={Signup} />
+      </main>
+    </Switch>
+    <Footer />
+  </Router>
+);
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  <Provider store={store}>{Routing}</Provider>,
   document.getElementById("root")
 );

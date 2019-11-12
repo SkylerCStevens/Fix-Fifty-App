@@ -1,7 +1,20 @@
 import React, { useState } from "react";
-import TextField from '@material-ui/core/TextField';
 
 const Login = () => {
+  const [firstName, setFirstName] = useState();
+  const [lastName, setLastName] = useState();
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
+
+
+  const handleForm = () => {
+    axios.post("/register", {
+      firstName,
+      lastName,
+      email,
+      password
+    })
+  }
 
   return (
     <React.Fragment>
@@ -24,9 +37,6 @@ const Login = () => {
           <input type="password" name="password" onChange={(e) => setPassword(e.target.value)} />
         </div>
         <button type="button" onClick={handleForm}>Login</button>
-        <div>
-          <a href="/auth/google">Google Login</a>
-        </div>
       </form>
     </React.Fragment>
   );

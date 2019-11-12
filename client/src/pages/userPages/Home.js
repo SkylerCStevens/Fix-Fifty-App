@@ -1,5 +1,7 @@
 import React from 'react';
-import "./Home.css";
+// import "./Home.css";
+import Nav from '../../components/Nav'
+import Footer from '../../components/Footer'
 
 const Home = () => {
     return (
@@ -18,6 +20,11 @@ const Home = () => {
 
 
             
+
+            </div>
+
+            <div>
+            <h2>Meet Our Team</h2>
 
             </div>
 
