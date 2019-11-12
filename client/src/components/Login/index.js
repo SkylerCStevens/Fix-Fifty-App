@@ -1,7 +1,10 @@
 import React, { useState } from "react";
-
+import './index.css';
 import axios from "axios";
-// import TextField from "@material-ui/core/TextField";
+import TextField from "@material-ui/core/TextField";
+import Button from '@material-ui/core/Button';
+import Link from '@material-ui/core/Link'
+import Grid from '@material-ui/core/Grid';
 
 const Login = () => {
   const [email, setEmail] = useState();
@@ -17,34 +20,53 @@ const Login = () => {
 
   return (
     <React.Fragment>
-      <h1>Login</h1>
-      <form>
-        <div>
+      <div className="login-wrapper">
+        <h1 className="login-header">Login</h1>
+        <form className="login-container" noValidate>
+          <Grid item xs={12} >
+            <TextField
+              autoComplete="email"
+              name="email"
+              variant="outlined"
+              onChange={e => setEmail(e.target.value)}
+              required
+              fullWidth
+              id="email"
+              label="Email Address"
 
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            name="username"
-            onChange={e => setEmail(e.target.value)}
-          />
-        </div>
-        <div>
-          <label htmlFor="password">Password</label>
-          <input
-            type="password"
-            name="password"
-            onChange={e => setPassword(e.target.value)}
-          />
-        </div>
-        <button type="button" onClick={handleForm}>
-          Login
-        </button>
-        <div>
-          <a href="http://localhost:5000/auth/google" >Google Login</a>
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <TextField
+              autoComplete="current-password"
+              name="password"
+              variant="outlined"
+              required
+              fullWidth
+              id="password"
+              label="Password"
+              type="password"
+              onChange={e => setPassword(e.target.value)}
+            />
+          </Grid>
+          <Button
+            type="submit"
+            color="primary"
+            variant="contained"
+            required
+            fullWidth
+            onClick={handleForm}
+          >
+            Login
+                </Button>
+          <div>
+            <Link><a href="http://localhost:5000/auth/google" >Google Login</a></Link>
+          </div>
 
-        </div>
-      </form>
-    </React.Fragment>
+        </form>
+      </div>
+
+    </React.Fragment >
   );
 };
 

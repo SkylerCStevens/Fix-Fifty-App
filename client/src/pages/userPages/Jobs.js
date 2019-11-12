@@ -24,18 +24,17 @@ class Jobs extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Nav/>
-        <h1>Jobs</h1>
-
-        <h2></h2>
+        <Nav />
+        <h1>Job Listings</h1>
 
 
-        
 
-        <Footer/>
+
+
+        <Footer />
       </React.Fragment>
 
-     
+
     );
   }
 }

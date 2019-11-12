@@ -1,63 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-// import "./Signup.css";
-
-
-
-
-function Signup() {
-
-
-
-
-    return (
-        <div>
-
-            <form>
-
-                <label for="Username"></label>
-
-                <input
-
-                    name="Username"
-                    type="text"
-                    placeholder="Username"
-                />
-
-
-                <label for="Email"></label>
-
-                <input
-
-                    name="Email Address"
-                    type="text"
-                    placeholder="Email Address"
-                />
-
-                <label for="Password"></label>
-
-                <input
-
-                    name="Password"
-                    type="password"
-                    placeholder="Password"
-                />
-
-                <label for="Confirmpassword"></label>
-
-                <input
-
-                    name="Confirmpassword"
-                    type="password"
-                    placeholder="Confirm Password"
-                />
-                <button type="submit">Sign Up</button>
-            </form>
-
-        </div>
-    )
-
-=======
 import React, { useState } from "react";
 //import axios from 'axios';
 import Avatar from '@material-ui/core/Avatar';
@@ -71,23 +11,6 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-
-/*const Signup = () => {
-  const [firstName, setFirstName] = useState();
-  const [lastName, setLastName] = useState();
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
-
-
-  const handleForm = () => {
-    axios.post("/register", {
-      firstName,
-      lastName,
-      email,
-      password
-    })
-  }
-*/
 
 
 const useStyles = makeStyles(theme => ({
@@ -120,31 +43,6 @@ const useStyles = makeStyles(theme => ({
 export default function Signup() {
   const classes = useStyles();
   return (
-    /* <React.Fragment>
-       <h1>Signup</h1>
-       <form>
-         <div>
-           <label htmlFor="firstName">First Name</label>
-           <input type="firstName" name="firstName" onChange={(e) => setFirstName(e.target.value)}/>
-         </div>
-         <div>
-           <label htmlFor="lastName">Last Name</label>
-           <input type="lastName" name="lastName" onChange={(e) => setLastName(e.target.value)}/>
-         </div>
-         <div>
-           <label htmlFor="email">Email</label>
-           <input type="email" name="username" onChange={(e) => setEmail(e.target.value)}/>
-         </div>
-         <div>
-           <label htmlFor="password">Password</label>
-           <input type="password" name="password" onChange={(e) => setPassword(e.target.value)}/>
-         </div>
-         <button type="button" onClick={handleForm}>Login</button>
-       </form>
-     </React.Fragment>*/
-
-
-
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
@@ -235,11 +133,10 @@ export default function Signup() {
 
       </div>
     </Container>
-  
 
 
-    );
->>>>>>> bd0ef508761b3918811c45a7f72e36bc0015ac67
+
+  );
 }
 
 

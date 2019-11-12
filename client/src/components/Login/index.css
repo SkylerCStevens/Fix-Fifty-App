@@ -1,0 +1,58 @@
+.login-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.login-wrapper{
+    padding-top: 15px;
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container div{
+    margin-top:13px;
+}
+
+.login-container Button{
+    margin-top: 20px;
+}
+
+.MuiButton-fullWidth {
+    width: 65% !important;
+}
+
+.MuiButton-containedPrimary {
+    margin-top:15px !important;
+    color: #fff;
+    background-color: #3f51b5;
+}
+
+@media only screen and (max-width: 425px){
+p{
+   display: none; 
+}
+h3{
+    display: none;
+}
+
+.login-wrapper{
+    margin-top:35%;
+}
+
+.MuiOutlinedInput-input {
+    padding: 15px 14px;
+}
+
+.MuiInputBase-input:invalid {
+    box-shadow: none;
+    width: 220px;
+}
+}
