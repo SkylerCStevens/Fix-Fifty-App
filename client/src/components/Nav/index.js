@@ -1,14 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-// import "./Nav.css";
 
 const Nav = () => (
   <nav className="nav">
     <NavLink exact to="/" className="link">
-      <img 
-      className='logo'
-      src={require('../img/logo.png')} 
-      alt='clymb logo'
+      <img
+        className='logo'
+        src={require('../img/logo.png')}
+        alt='clymb logo'
       ></img>
     </NavLink>
 
