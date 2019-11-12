@@ -86,6 +86,7 @@ const Login = () => {
               className={classes.submit}
               variant="contained"
               fullWidth
+              onSubmit={handleForm()}
             >
               Login
                 </Button>
@@ -94,7 +95,7 @@ const Login = () => {
               className={classes.submit}
               fullWidth
             ><a href="http://localhost:5000/auth/google">Google Login</a></Button>
-            <Grid container justify="flex-end">
+            <Grid container justify="center">
               <Grid item>
 
                 <Link href="http://localhost:3000/signup" variant="body2">
