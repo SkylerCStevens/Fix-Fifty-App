@@ -23,7 +23,7 @@
     margin-top:10px;
 }
 
-a{
+Button a{
     color: white;
     text-decoration: none;
 }
@@ -57,6 +57,10 @@ p{
 }
 h3{
     display: none;
+}
+
+.makeStyles-paper-1{
+    margin-top: 50% !important;
 }
 
 .login-wrapper{

@@ -1,0 +1,17 @@
+@media only screen and (max-width: 425px){
+nav{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+a{
+   padding: 25px;
+   text-decoration: none;
+   font-family: roboto;
+   color: black;
+}
+}
