@@ -4,6 +4,8 @@
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
+    font-family: roboto;
+    font-weight: bold;
 }
 
 .login-wrapper{
@@ -18,15 +20,29 @@
 }
 
 .login-container div{
-    margin-top:13px;
+    margin-top:10px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.MuiButton-containedSecondary {
+    color: #fff;
+    background-color: #f50057;
+}
+
+.MuiOutlinedInput-input {
+    padding: 12px 12px;
 }
 
 .login-container Button{
-    margin-top: 20px;
+    margin-top: 20px !important;
 }
 
 .MuiButton-fullWidth {
-    width: 65% !important;
+    width: 100% !important;
 }
 
 .MuiButton-containedPrimary {
@@ -54,5 +70,13 @@ h3{
 .MuiInputBase-input:invalid {
     box-shadow: none;
     width: 220px;
+}
+
+.makeStyles-submit-3{
+    margin: 10px !important;
+}
+
+.MuiButton-containedSecondary{
+    width: 100%;
 }
 }
