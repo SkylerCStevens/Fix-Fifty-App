@@ -6,11 +6,14 @@ import { Provider } from "react-redux";
 
 import "./assets/styles/styles.scss";
 import reducer from "./store/reducer";
-import Home from "./components/Home";
 import Header from "./components/Layout/Header";
 import Login from "./components/Login";
 import Signup from "./components/Register";
 import Footer from "./components/Layout/Footer";
+import Joblistings from "./components/Joblistings";
+import Nav from "./components/Nav";
+import Schedule from './components/Schedule/index';
+import Profile from './components/Profile/index';
 
 // creating a store for redux with the redux chrome extension
 export const store = createStore(
@@ -21,11 +24,14 @@ export const store = createStore(
 const Routing = (
   <Router>
     <Header />
+    <Nav />
     <Switch>
       <main>
-        <Route path="/" exact component={Home} />
+        <Route path="/" exact component={Joblistings} />
         <Route path="/login" component={Login} />
         <Route path="/signup" component={Signup} />
+        <Route path="/schedule" component={Schedule} />
+        <Route path="/profile" component={Profile} />
       </main>
     </Switch>
     <Footer />
