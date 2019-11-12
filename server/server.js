@@ -15,6 +15,11 @@ app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+
+// importing routes
+const users = require('../routes/users')
+app.use(users)
+
 // checking the node_env
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
