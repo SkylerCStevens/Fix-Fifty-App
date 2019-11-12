@@ -5,17 +5,16 @@ import Home from "./pages/userPages/Home";
 import Jobs from "./pages/userPages/Jobs";
 import Reviews from "./pages/userPages/Reviews";
 import Users from "./pages/userPages/Users";
-import Nav from "./components/Nav";
+import Nav from "./components/Nav/index";
 import Footer from "./components/Footer";
-import Joblistings from"./components/Joblistings";
+import Joblistings from "./components/Joblistings";
 // import Login from"./components/Login";
-import Signup from"./components/Signup";
+import Signup from "./components/Signup";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Nav />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/users" component={Users} />
@@ -23,9 +22,10 @@ function App() {
           <Route path="/reviews" component={Reviews} />
           <Route path="/counter" component={Counter} />
           {/* <Route path="/Login" component={Login}/> */}
-          <Route path="/Signup" component={Signup}/>
-          <Route path="/Joblistings" component={Joblistings}/>
+          <Route path="/Signup" component={Signup} />
+          <Route path="/Joblistings" component={Joblistings} />
         </Switch>
+        <Nav />
         <Footer />
       </Router>
     </div>
