@@ -22,7 +22,8 @@ const useStyles = makeStyles({
     flexGrow: 1,
     maxWidth: 400,
     padding: 10,
-    marginTop: 30
+    marginTop: 30,
+    textAlign: "center"
   },
   submit: {
     display: "flex",
@@ -32,7 +33,11 @@ const useStyles = makeStyles({
   msg: {
     color: "#655f5f",
     fontSize: 15,
-    padding: 10
+    padding: 10,
+    fontFamily: "roboto"
+  },
+  center: {
+    textAlign: "center"
   }
 
 });
@@ -74,8 +79,8 @@ function Verified() {
           <Tab label="Reviews" />
         </Tabs>
       </Paper>
-      <List component="nav" aria-label="secondary mailbox folders">
-        <ListItem button>
+      <List aria-label="secondary mailbox folders">
+        <ListItem button className={classes.center}>
           <ListItemText primary="- Painting *" />
           <ListItemText primary=" - Roofing *" />
           <ListItemText primary=" - Woodwork *" />

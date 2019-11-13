@@ -32,7 +32,8 @@ const useStyles = makeStyles({
   msg: {
     color: "#655f5f",
     fontSize: 15,
-    padding: 10
+    padding: 10,
+    fontFamily: "roboto"
   }
 
 });
@@ -75,7 +76,7 @@ function Unverified() {
       </Paper>
 
       <List component="nav" aria-label="secondary mailbox folders">
-        <ListItem button>
+        <ListItem >
           <ListItemText primary="- Painting" />
           <ListItemText primary=" - Roofing" />
           <ListItemText primary=" - Woodwork" />
