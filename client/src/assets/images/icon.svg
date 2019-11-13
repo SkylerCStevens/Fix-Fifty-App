@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Mockup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Profile-(Verified)" transform="translate(-316.000000, -745.000000)" stroke="#9D9D9D">
+            <g id="Rectangle-2-Copy-3" transform="translate(282.000000, 730.000000)">
+                <g id="icon" transform="translate(35.000000, 16.000000)">
+                    <circle id="Oval-2" cx="12" cy="4.5" r="4.5"></circle>
+                    <polyline id="Combined-Shape" points="13.4987796 9 16.4987796 12 22.4975592 13.8333333 24 24 0.00760918054 24 1.5 13.8333333 6 12"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

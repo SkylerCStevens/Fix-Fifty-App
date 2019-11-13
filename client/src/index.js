@@ -6,10 +6,8 @@ import { Provider } from "react-redux";
 
 import "./assets/styles/styles.scss";
 import reducer from "./store/reducer";
-import Header from "./components/Layout/Header";
 import Login from "./components/Login";
 import Signup from "./components/Register";
-import Footer from "./components/Layout/Footer";
 import Joblistings from "./components/Joblistings";
 import Nav from "./components/Nav";
 import Schedule from './components/Schedule/index';
@@ -25,7 +23,6 @@ export const store = createStore(
 
 const Routing = (
   <Router>
-    <Header />
     <Nav />
     <Switch>
       <main>
@@ -36,7 +33,6 @@ const Routing = (
         <Route path="/profile" component={Profile} />
       </main>
     </Switch>
-    <Footer />
   </Router>
 );
 
