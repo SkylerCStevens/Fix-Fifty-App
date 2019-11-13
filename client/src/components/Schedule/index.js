@@ -25,7 +25,7 @@ const useStyles = makeStyles(theme => ({
 
 function Schedule() {
 
-    const [selectedDate, setSelectedDate] = React.useState(new Date('2019-11-15T21:11:54'));
+    const [selectedDate, setSelectedDate] = React.useState(new Date('2019-11-15T09:00:00'));
     const [open, setOpen] = React.useState(false);
 
     const handleDateChange = date => {

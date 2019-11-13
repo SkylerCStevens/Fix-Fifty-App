@@ -9,7 +9,6 @@ import Login from "./components/Login";
 import Signup from "./components/Register";
 import Joblistings from "./components/Joblistings/Joblistings";
 import VerfiedJobs from "./components/Joblistings/index";
-import Nav from "./components/Nav";
 import Schedule from './components/Schedule/index';
 import Unverified from './components/Profile/Unverified';
 import Verified from './components/Profile/Verified';
