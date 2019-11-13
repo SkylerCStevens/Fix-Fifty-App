@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import './index.css'
+import logo from '../../assets/images/logo.png';
 
 const useStyles = makeStyles(theme => ({
   '@global': {
@@ -37,8 +38,9 @@ export default function Signup() {
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
+        <img src={logo} alt="logo" className="logo-login" />
         <Typography component="h1" variant="h5">
-          Sign up
+          SIGN UP
             </Typography >
 
         <form className={classes.form} noValidate>
@@ -101,7 +103,7 @@ export default function Signup() {
               Sign up
                 </Button>
 
-            <Grid container justify="flex-end">
+            <Grid container justify="center">
               <Grid item>
 
                 <Link href="http://localhost:3000/login" variant="body2">
