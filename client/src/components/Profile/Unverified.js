@@ -9,6 +9,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import Button from '@material-ui/core/Button';
 import ListItemText from '@material-ui/core/ListItemText';
+import Nav from '../Nav'
 
 
 const useStyles = makeStyles({
@@ -47,6 +48,7 @@ function Unverified() {
   return (
     <div>
       <h1 className="title">Profile</h1>
+      <Nav />
       <Grid container justify="center" alignItems="center">
         <Avatar
           alt="Jonathan Giler"

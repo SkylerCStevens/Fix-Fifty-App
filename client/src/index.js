@@ -25,7 +25,6 @@ export const store = createStore(
 
 const Routing = (
   <Router>
-    <Nav />
     <Switch>
       <main>
         <Route path="/" exact component={Joblistings} />

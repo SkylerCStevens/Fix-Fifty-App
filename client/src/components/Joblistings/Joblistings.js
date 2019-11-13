@@ -4,6 +4,7 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from "@material-ui/core/styles";
+import Nav from '../Nav'
 
 const useStyles = makeStyles({
   unverified: {
@@ -26,6 +27,7 @@ function Joblistings() {
 
   return (
     <div className="container">
+      <Nav />
       <img src={logo} alt="logo" className="logo" />
       <h1 className="text-center mt-5 mb-5 title">JOBS</h1>
       <Grid justify="center" container>
