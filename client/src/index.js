@@ -8,6 +8,7 @@ import reducer from "./store/reducer";
 import Login from "./components/Login";
 import Signup from "./components/Register";
 import Joblistings from "./components/Joblistings/Joblistings";
+import VerfiedJobs from "./components/Joblistings/index";
 import Nav from "./components/Nav";
 import Schedule from './components/Schedule/index';
 import Unverified from './components/Profile/Unverified';
@@ -28,11 +29,12 @@ const Routing = (
     <Switch>
       <main>
         <Route path="/" exact component={Joblistings} />
+        <Route path="/jobs" component={VerfiedJobs} />
         <Route path="/login" component={Login} />
         <Route path="/signup" component={Signup} />
         <Route path="/schedule" component={Schedule} />
-        <Route path="/profileUnverified" component={Unverified} />
-        <Route path="/profileVerified" component={Verified} />
+        <Route path="/profile/Unverified" exact component={Unverified} />
+        <Route path="/profile/Verified" exact component={Verified} />
       </main>
     </Switch>
   </Router>

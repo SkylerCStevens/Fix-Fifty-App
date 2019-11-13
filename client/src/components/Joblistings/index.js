@@ -14,20 +14,20 @@ const useStyles = makeStyles(theme => ({
     marginBottom: 50
   },
   title: {
-    fontSize: 14,
+    fontSize: 14
   },
   pos: {
-    marginBottom: 12,
+    marginBottom: 12
   },
   button: {
-    margin: theme.spacing(1),
+    margin: theme.spacing(1)
   },
   input: {
-    display: 'none',
+    display: 'none'
   },
 }));
 
-function Joblistings() {
+function JoblistingsVerified() {
   const classes = useStyles();
   return (
     <div className="container">
@@ -132,7 +132,7 @@ function Joblistings() {
       </Button>
         </CardActions>
       </Card>
-    </div>
+    </div >
   )
 
 }
@@ -140,4 +140,4 @@ function Joblistings() {
 
 
 
-export default Joblistings;
+export default JoblistingsVerified;

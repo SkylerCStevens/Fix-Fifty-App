@@ -27,6 +27,7 @@ const Login = () => {
     '@global': {
       body: {
         backgroundColor: theme.palette.common.white,
+        paddingBottom: 200
       },
     },
     paper: {
