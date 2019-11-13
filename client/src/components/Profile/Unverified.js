@@ -31,7 +31,8 @@ const useStyles = makeStyles({
   msg: {
     color: "#655f5f",
     fontSize: 15,
-    padding: 10
+    padding: 10,
+    fontFamily: "roboto"
   }
 
 });
