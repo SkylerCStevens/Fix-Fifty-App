@@ -1,0 +1,53 @@
+.profile {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+.name {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.rep {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.score {
+    text-align: center;
+    color: #1c1c45;
+    font-size: 50px;
+    margin-top: 5px;
+}
+
+.tabs {
+    margin-top: 20px;
+}
+
+.skills {
+    color: green;
+}
+
+.info {
+    text-align: center;
+    color: darkred;
+}
+
+.edit {
+    display: block;
+    margin: 10px auto;
+    background-color: orange;
+    border: none;
+    border-radius: 20px;
+    font-size: 3rem;
+    transition: all .5s;
+}
+
+.edit:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: #4CAF50; /* Green */
+    color: white;
+}

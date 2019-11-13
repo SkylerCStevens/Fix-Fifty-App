@@ -1,0 +1,38 @@
+.title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.jobs {
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(77, 63, 63);
+    margin-top: 50px;
+}
+
+.instructions {
+    text-align: center;
+    font-size: 1rem;
+    color: silver; 
+    display: block;
+    margin: 50px auto;
+    max-width: 200px;
+    line-height: 2;
+}
+
+.button {
+    display: block;
+    margin: 10px auto;
+    background-color: skyblue;
+    border: none;
+    border-radius: 20px;
+    font-size: 3rem;
+    transition: all .5s;
+    max-width: 300px;
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: rgb(43, 33, 172); 
+    color: white;
+}
