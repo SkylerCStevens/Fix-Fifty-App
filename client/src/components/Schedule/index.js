@@ -6,6 +6,7 @@ import { MuiPickersUtilsProvider, KeyboardDatePicker, KeyboardTimePicker } from 
 import DateFnsUtils from '@date-io/date-fns';
 import Button from '@material-ui/core/Button';
 import Modal from '@material-ui/core/Modal';
+import Nav from '../Nav'
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => ({
@@ -58,7 +59,7 @@ function Schedule() {
             <img src={logo} alt="logo" className="logo-1" />
 
             <h1 className="title">SCHEDULE</h1>
-
+            <Nav />
             <MuiPickersUtilsProvider utils={DateFnsUtils}>
                 <Grid container justify="space-around">
                     <div>

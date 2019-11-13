@@ -9,6 +9,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import Button from '@material-ui/core/Button';
 import ListItemText from '@material-ui/core/ListItemText';
+import Nav from '../Nav'
 
 
 const useStyles = makeStyles({
@@ -21,7 +22,8 @@ const useStyles = makeStyles({
     flexGrow: 1,
     maxWidth: 400,
     padding: 10,
-    marginTop: 30
+    marginTop: 30,
+    textAlign: "center"
   },
   submit: {
     display: "flex",
@@ -33,6 +35,9 @@ const useStyles = makeStyles({
     fontSize: 15,
     padding: 10,
     fontFamily: "roboto"
+  },
+  center: {
+    textAlign: "center"
   }
 
 });
@@ -47,6 +52,7 @@ function Verified() {
   return (
     <div>
       <h1 className="title">Profile</h1>
+      <Nav />
       <Grid container justify="center" alignItems="center">
         <Avatar
           alt="Jonathan Giler"
@@ -73,8 +79,8 @@ function Verified() {
           <Tab label="Reviews" />
         </Tabs>
       </Paper>
-      <List component="nav" aria-label="secondary mailbox folders">
-        <ListItem button>
+      <List aria-label="secondary mailbox folders">
+        <ListItem button className={classes.center}>
           <ListItemText primary="- Painting *" />
           <ListItemText primary=" - Roofing *" />
           <ListItemText primary=" - Woodwork *" />
