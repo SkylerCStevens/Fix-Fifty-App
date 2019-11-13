@@ -5,35 +5,47 @@ import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
-import TreeView from "@material-ui/lab/TreeView";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import TreeItem from "@material-ui/lab/TreeItem";
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import Button from '@material-ui/core/Button';
+import ListItemText from '@material-ui/core/ListItemText';
 
 
 const useStyles = makeStyles({
   avatar: {
-    margin: 10,
     width: 150,
     height: 150
   },
   root: {
-    height: 216,
+    height: 150,
     flexGrow: 1,
     maxWidth: 400,
+    padding: 10,
+    marginTop: 30
+  },
+  submit: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center"
+  },
+  msg: {
+    color: "#655f5f",
+    fontSize: 15,
+    padding: 10
   }
+
 });
 
 function Unverified() {
   const classes = useStyles();
-  const [value, setValue] = React.useState(2);
+  const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
   return (
     <div>
-      <h1 className="profile">Profile</h1>
+      <h1 className="title">Profile</h1>
       <Grid container justify="center" alignItems="center">
         <Avatar
           alt="Jonathan Giler"
@@ -59,27 +71,20 @@ function Unverified() {
           <Tab label="Reviews" />
         </Tabs>
       </Paper>
-      <TreeView
-        className={classes.root}
-        defaultCollapseIcon={<ExpandMoreIcon />}
-        defaultExpandIcon={<ChevronRightIcon />}
-      >
-        <TreeItem nodeId="1" label="Skill Set" className='tree'>
-          <TreeItem nodeId="2" label="React" className='skills' />
-          <TreeItem nodeId="3" label="Node"  className='skills'/>
-          <TreeItem nodeId="4" label="SASS"  className='skills'/>
-        </TreeItem>
-        <TreeItem nodeId="5" label="Interests" className='tree'>
-          <TreeItem nodeId="6" label="Building websites" >
-            <TreeItem nodeId="7" label="HIRED UP">
-              <TreeItem nodeId="8" label="index.js" />
-              <TreeItem nodeId="9" label="tree-view.js" />
-            </TreeItem>
-          </TreeItem>
-        </TreeItem>
-      </TreeView>
-      <h2 className='info'>Verified skills will have * at the end.</h2>
-      <button type='button' className='edit'>Edit Skills</button>
+
+      <List component="nav" aria-label="secondary mailbox folders">
+        <ListItem button>
+          <ListItemText primary="- Painting" />
+          <ListItemText primary=" - Roofing" />
+          <ListItemText primary=" - Woodwork" />
+        </ListItem>
+      </List>
+
+      <Grid justify="center" className={classes.submit}>
+        <h2 className={classes.msg}>Verified skills will have * at the end.</h2>
+        <Button color="primary">Edit Skills</Button>
+      </Grid>
+
     </div>
   );
 }
