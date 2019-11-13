@@ -1,0 +1,47 @@
+.logo{
+   width: 180px;
+   height: auto;
+}
+
+.company-name {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:30%;
+}
+
+.title{
+    margin-bottom: 20px;
+}
+
+.makeStyles-button-4 {
+    margin: 10px;
+    width: 50%;
+    height: auto;
+}
+
+.MuiPaper-elevation1 {
+    box-shadow: black 5px 5px 15px !important;
+}
+
+.card-border{
+    width: 90%;
+    margin-bottom: 30px;
+    border-radius: 20px 2px 20px !important;
+}
+
+.MuiCardActions-root{
+    flex-direction: row-reverse;
+}
+
+.MuiButton-outlinedPrimary {
+    color: #147918 !important;
+    border: 1px solid rgb(20, 121, 24) !important;
+}
