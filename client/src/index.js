@@ -10,10 +10,13 @@ import Header from "./components/Layout/Header";
 import Login from "./components/Login";
 import Signup from "./components/Register";
 import Footer from "./components/Layout/Footer";
-import Joblistings from "./components/Joblistings";
+import Joblistings from "./components/Joblistings/Joblistings";
 import Nav from "./components/Nav";
 import Schedule from './components/Schedule/index';
-import Profile from './components/Profile/index';
+import Unverified from './components/Profile/Unverified';
+import Verified from './components/Profile/Verified';
+import '../src/assets/styles/unverified.scss'
+import '../src/assets/styles/jobs.scss'
 
 // creating a store for redux with the redux chrome extension
 export const store = createStore(
@@ -31,7 +34,8 @@ const Routing = (
         <Route path="/login" component={Login} />
         <Route path="/signup" component={Signup} />
         <Route path="/schedule" component={Schedule} />
-        <Route path="/profile" component={Profile} />
+        <Route path="/profileUnverified" component={Unverified} />
+        <Route path="/profileVerified" component={Verified} />
       </main>
     </Switch>
     <Footer />
