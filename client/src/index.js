@@ -13,6 +13,8 @@ import Nav from "./components/Nav";
 import Schedule from './components/Schedule/index';
 import Profile from './components/Profile/index';
 
+import 'bootstrap/dist/css/bootstrap.css';
+
 // creating a store for redux with the redux chrome extension
 export const store = createStore(
   reducer,
