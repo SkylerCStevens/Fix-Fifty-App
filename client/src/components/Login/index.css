@@ -52,13 +52,6 @@ Button a{
 }
 
 @media only screen and (max-width: 425px){
-p{
-   display: none; 
-}
-h3{
-    display: none;
-}
-
 .makeStyles-paper-1{
     margin-top: 50% !important;
 }
@@ -82,5 +75,9 @@ h3{
 
 .MuiButton-containedSecondary{
     width: 100%;
+}
+
+nav.nav{
+    display: none;
 }
 }
