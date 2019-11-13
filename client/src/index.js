@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
-
 import "./assets/styles/styles.scss";
 import reducer from "./store/reducer";
 import Login from "./components/Login";
@@ -13,7 +12,6 @@ import Nav from "./components/Nav";
 import Schedule from './components/Schedule/index';
 import Profile from './components/Profile/index';
 
-import 'bootstrap/dist/css/bootstrap.css';
 
 // creating a store for redux with the redux chrome extension
 export const store = createStore(

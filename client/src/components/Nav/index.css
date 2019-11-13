@@ -6,7 +6,7 @@ nav{
     justify-content: center;
     align-items: center;
     width: 100%;
- 
+   
 }
 
 .icon-1{
@@ -36,6 +36,8 @@ nav div{
 nav.nav{
     border-top: gray 1px solid;
     box-shadow: 2px 2px 10px;
+    background-color: white;
+    z-index: 1;
 }
 
 a{

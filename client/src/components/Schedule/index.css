@@ -1,13 +1,16 @@
 @media only screen and (max-width: 425px){
-.logo{
+.logo-1{
     width: 180px;
+    height: auto;
+    margin-top: 20px;
 }
 
 .title{
     font-size: 30px;
     font-family: roboto;
-    color:#1c1c45;
-  
+    font-weight: bold;
+    color: #157919;
+    margin-top:20px;
 }
 
 .MuiInputLabel-animated{
@@ -18,6 +21,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 45%;
 }
 
 .MuiGrid-justify-xs-space-around{
@@ -43,7 +47,7 @@ label + .MuiInput-formControl {
 .MuiGrid-justify-xs-space-around {
     justify-content: space-around;
     margin-bottom: 40px;
-    margin-top: 10%;
+    margin-top: 10px;
 }
 
 .MuiButton-text {
@@ -51,8 +55,26 @@ label + .MuiInput-formControl {
     font-size: 45px;
 }
 
-nav.nav{
-    display: flex;
+#simple-modal-title{
+    margin-bottom: 20px;
 }
+
+.makeStyles-paper-2, .makeStyles-paper-109 {
+    margin-top: 40%;
+    height: 100px;
+    margin-left: 26px;
+    width: 300px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    font-family: roboto;
+    font-size: 20px;
+    border: 2px solid #000;
+    padding: 16px 32px 24px;
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2), 0px 5px 8px 0px rgba(0,0,0,0.14), 0px 1px 14px 0px rgba(0,0,0,0.12);
+    background-color: #fff;
+}
+
 
 }

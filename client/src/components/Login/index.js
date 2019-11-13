@@ -9,6 +9,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import logo from '../../assets/images/logo.png'
 
 const Login = () => {
   const [email, setEmail] = useState();
@@ -48,8 +49,9 @@ const Login = () => {
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
+        <img src={logo} alt="logo" className="logo-login" />
         <Typography component="h1" variant="h5">
-          Login
+          LOGIN
             </Typography >
 
         <form className={classes.form} noValidate>
