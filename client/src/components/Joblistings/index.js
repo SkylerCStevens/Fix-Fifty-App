@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import logo from '../../assets/images/logo.png';
+import Nav from '../Nav'
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -33,6 +34,7 @@ function JoblistingsVerified() {
     <div className="container">
       <img src={logo} alt="logo" className="logo" />
       <h1 className="text-center mt-5 mb-5 title">JOBS</h1>
+      <Nav />
       <Card className={classes.card, "card-border"}>
         <CardContent>
           <Typography className={classes.title} color="textSecondary" gutterBottom>
