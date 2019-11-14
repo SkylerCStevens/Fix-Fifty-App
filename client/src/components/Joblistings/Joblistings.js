@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from "@material-ui/core/styles";
 import Nav from '../Nav'
 
+//create classes for styling material ui components
 const useStyles = makeStyles({
   unverified: {
     margin: 25,

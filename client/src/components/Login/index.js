@@ -12,9 +12,10 @@ import Container from '@material-ui/core/Container';
 import logo from '../../assets/images/logo.png'
 
 const Login = () => {
+  //Set username and password in state to send back to server
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
-
+ //On submit post username and password to server
   const handleForm = () => {
     axios.post("/register", {
       username: email,
@@ -22,7 +23,7 @@ const Login = () => {
     });
   };
 
-
+ //Create classes for styling material ui components
   const useStyles = makeStyles(theme => ({
     '@global': {
       body: {
@@ -45,6 +46,7 @@ const Login = () => {
     },
 
   }));
+  //makes styles into classes
   const classes = useStyles();
   return (
     <Container component="main" maxWidth="xs">
@@ -54,7 +56,7 @@ const Login = () => {
         <Typography component="h1" variant="h5">
           LOGIN
             </Typography >
-
+        {/* Form for login */}
         <form className={classes.form} noValidate>
           <Grid container spacing={2}>
             <Grid item xs={12} >
@@ -93,6 +95,7 @@ const Login = () => {
             >
               Login
                 </Button>
+                {/* Link to google sign in */}
             <Button color="secondary"
               variant="contained"
               className={classes.submit}

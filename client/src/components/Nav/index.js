@@ -5,6 +5,7 @@ import icon from '../../assets/images/icon.svg';
 import demarche from '../../assets/images/demarche.svg';
 import search from '../../assets/images/Search.svg';
 
+//Navbar component
 const Nav = () => (
   <nav className="nav">
     <div>

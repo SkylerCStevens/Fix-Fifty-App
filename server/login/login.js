@@ -2,6 +2,7 @@ const router = require("express").Router();
 const User = require("../../models/user.model");
 const passport = require("passport")
 
+// verify login info
 router.post("/", (req, res) => {
   
   const user = new User({

@@ -22,6 +22,7 @@ export const store = createStore(
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
+//Routes for pages
 const Routing = (
   <Router>
     <Switch>

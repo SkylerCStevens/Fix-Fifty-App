@@ -93,7 +93,7 @@ connection.once("open", () => {
   console.log("MongoDB connection is live ");
 });
 mongoose.set("useFindAndModify", false);
-
+// define routes for api
 const auth = require("./auth/auth")
 app.use("/auth", auth);
 

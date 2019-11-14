@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
-
+// set variable Schema to equal mongoose schema
 const Schema = mongoose.Schema;
-
+// create mongoose schema for jobs
 const jobSchema = new Schema({
   title: {
     type: String,
@@ -23,7 +23,7 @@ const jobSchema = new Schema({
     required: "There has to be a payment amount"
   }
 });
-
+// create job model
 const Job = mongoose.model("job", jobSchema);
-
+// export Job model
 module.exports = Job;

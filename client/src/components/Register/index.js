@@ -42,7 +42,7 @@ export default function Signup() {
         <Typography component="h1" variant="h5">
           SIGN UP
             </Typography >
-
+        {/* Foorm to signup */}
         <form className={classes.form} noValidate>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>

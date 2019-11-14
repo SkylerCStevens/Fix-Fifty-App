@@ -27,22 +27,22 @@ function Schedule() {
 
     const [selectedDate, setSelectedDate] = React.useState(new Date('2019-11-15T09:00:00'));
     const [open, setOpen] = React.useState(false);
-
+    //When date is selected on calendar
     const handleDateChange = date => {
         setSelectedDate(date);
 
         console.log(date)
     };
-
+    //When the calendar is opened
     const handleOpen = () => {
         setOpen(true);
     };
 
-
+    //When the calendar is closed
     const handleClose = () => {
         setOpen(false);
     };
-
+    //Close the modal
     const handleRedirect = () => {
         handleClose()
         window.location = '/';

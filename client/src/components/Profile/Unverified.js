@@ -11,7 +11,7 @@ import Button from '@material-ui/core/Button';
 import ListItemText from '@material-ui/core/ListItemText';
 import Nav from '../Nav'
 
-
+//Set styles for material ui components
 const useStyles = makeStyles({
   avatar: {
     width: 150,

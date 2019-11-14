@@ -8,25 +8,25 @@ import Schedule from "./components/Schedule/index";
 import Unverified from "./components/Profile/Unverified";
 import Verified from './components/Profile/Verified';
 import VerifiedJobs from './components/Joblistings/index'
-
-function App() {
-  return (
-    <div className="App">
-      <Router>
-        <Nav />
-        <Switch>
-          <Route path="/login" component={Login} />
-          <Route path="/signup" component={Signup} />
-          <Route path="/" component={Joblistings} />
-          <Route path="/jobs" component={VerifiedJobs} />
-          <Route path="/schedule" component={Schedule} />
-          <Route path="/profile/Unverified" exact component={Unverified} />
-          <Route path="/profile/Verified" exact component={Verified} />
-        </Switch>
-        <Footer />
-      </Router>
-    </div>
-  );
-}
+//Using index because of redux app.js not in use right now
+// function App() {
+//   return (
+//     <div className="App">
+//       <Router>
+//         <Nav />
+//         <Switch>
+//           <Route path="/login" component={Login} />
+//           <Route path="/signup" component={Signup} />
+//           <Route path="/" component={Joblistings} />
+//           <Route path="/jobs" component={VerifiedJobs} />
+//           <Route path="/schedule" component={Schedule} />
+//           <Route path="/profile/Unverified" exact component={Unverified} />
+//           <Route path="/profile/Verified" exact component={Verified} />
+//         </Switch>
+//         <Footer />
+//       </Router>
+//     </div>
+//   );
+// }
 
 export default App;

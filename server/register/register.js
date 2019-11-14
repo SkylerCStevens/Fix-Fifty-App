@@ -2,7 +2,7 @@ const router = require("express").Router();
 const User = require("../../models/user.model");
 const passport = require("passport");
 
-
+// create new user
 router.post("/", (req, res) => {
   User.register(
     { username: req.body.username },

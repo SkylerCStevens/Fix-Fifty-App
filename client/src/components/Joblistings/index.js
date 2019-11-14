@@ -9,6 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import logo from '../../assets/images/logo.png';
 import Nav from '../Nav'
 
+//Create styles classes for styling material ui components
 const useStyles = makeStyles(theme => ({
   card: {
     maxWidth: 382,
@@ -28,6 +29,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+//Component for showing available jobs
 function JoblistingsVerified() {
   const classes = useStyles();
   return (
@@ -35,6 +37,7 @@ function JoblistingsVerified() {
       <img src={logo} alt="logo" className="logo" />
       <h1 className="text-center mt-5 mb-5 title">JOBS</h1>
       <Nav />
+      {/* Material ui card components */}
       <Card className={classes.card, "card-border"}>
         <CardContent>
           <Typography className={classes.title} color="textSecondary" gutterBottom>

@@ -11,7 +11,7 @@ import Button from '@material-ui/core/Button';
 import ListItemText from '@material-ui/core/ListItemText';
 import Nav from '../Nav'
 
-
+// Create classes with styles for material ui
 const useStyles = makeStyles({
   avatar: {
     width: 150,
@@ -42,6 +42,7 @@ const useStyles = makeStyles({
 
 });
 
+//component for once user has been verified
 function Verified() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
