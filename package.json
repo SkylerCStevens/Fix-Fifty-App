@@ -1,5 +1,5 @@
 {
-  "name": "Fix-Fifty-App",
+  "name": "fixFiftyApp",
   "version": "1.0.0",
   "description": "With Charlotte dead last (50) on the list of largest cities in the United States on economic mobility we had to come up with something to help our community. Our idea was to confront the problem head on, people need jobs quick. Interviewing and training make the task of getting a new job a long process so to streamline this we came up with the idea of connecting companies and workers for quick-temp jobs based on the workers skills. These skills would be verified through standardized quick interviews based on our partner companies' needs.",
   "main": "index.js",
