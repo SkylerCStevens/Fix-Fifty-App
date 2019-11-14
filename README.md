@@ -25,7 +25,7 @@ Once the user has met with an admin they will be awarded 3 reputation points and
 ![Verified User Profile](./client/src/assets/images/hiredUpVerifiedProfile.png)
 
 The new verified skills also allow the user to see corresponding job postings that they can apply for.
-![Verified Jobs Page](./client/src/assets/images/hiredUpVerifiedJob.png width="100" height="200")
+![Verified Jobs Page](./client/src/assets/images/hiredUpVerifiedJob.png)
 
 ## Getting Started with the Code
 To use this app first run
