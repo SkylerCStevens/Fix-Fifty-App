@@ -9,23 +9,23 @@ We are working to connect with local non-profits to find the individuals who nee
 
 ## App features
 With the app users can sign up with either a new username and password or through their google accounts
-![Login Page](./client/src/assets/images/hiredUpLogin.png)
+![Login Page](./client/src/assets/images/hiredUpLogin.png =100x200)
 
 When the user first logs in they will see a screen telling them they need to schedule a meeting with a Hire Up admin. This meeting would be to verify our users and their skills.
-![Unverified Job Page](./client/src/assets/images/hiredUpUnverifiedJob.png)
+![Unverified Job Page](./client/src/assets/images/hiredUpUnverifiedJob.png =100x200)
 
 After clicking the button you are taken to our schedule page where the user is able to pick a date to meet an admin.
-![Schedule Page](./client/src/assets/images/hiredUpSchedule.png)
-![Schedule Drop Down](./client/src/assets/images/hiredUpScheduleMenu.png)
+![Schedule Page](./client/src/assets/images/hiredUpSchedule.png =100x200)
+![Schedule Drop Down](./client/src/assets/images/hiredUpScheduleMenu.png =100x200)
 
 There is also a user profile page with photo, name, reputation points, skills, and reviews. Before becoming verified the user does not have any reputation points.
-![Unverified User Profile](./client/src/assets/images/hiredUpUnverifiedProfile.png)
+![Unverified User Profile](./client/src/assets/images/hiredUpUnverifiedProfile.png =100x200)
 
 Once the user has met with an admin they will be awarded 3 reputation points and their skills will become verified.
-![Verified User Profile](./client/src/assets/images/hiredUpVerifiedProfile.png)
+![Verified User Profile](./client/src/assets/images/hiredUpVerifiedProfile.png =100x200)
 
 The new verified skills also allow the user to see corresponding job postings that they can apply for.
-![Verified Jobs Page](./client/src/assets/images/hiredUpVerifiedJob.png)
+![Verified Jobs Page](./client/src/assets/images/hiredUpVerifiedJob.png =100x200)
 
 ## Getting Started with the Code
 To use this app first run
