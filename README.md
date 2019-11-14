@@ -9,22 +9,28 @@ We are working to connect with local non-profits to find the individuals who nee
 
 ## App features
 With the app users can sign up with either a new username and password or through their google accounts
+
 ![Login Page](./client/src/assets/images/hiredUpLogin.png)
 
 When the user first logs in they will see a screen telling them they need to schedule a meeting with a Hire Up admin. This meeting would be to verify our users and their skills.
+
 ![Unverified Job Page](./client/src/assets/images/hiredUpUnverifiedJob.png)
 
 After clicking the button you are taken to our schedule page where the user is able to pick a date to meet an admin.
+
 ![Schedule Page](./client/src/assets/images/hiredUpSchedule.png)
 ![Schedule Drop Down](./client/src/assets/images/hiredUpScheduleMenu.png)
 
 There is also a user profile page with photo, name, reputation points, skills, and reviews. Before becoming verified the user does not have any reputation points.
+
 ![Unverified User Profile](./client/src/assets/images/hiredUpUnverifiedProfile.png)
 
 Once the user has met with an admin they will be awarded 3 reputation points and their skills will become verified.
+
 ![Verified User Profile](./client/src/assets/images/hiredUpVerifiedProfile.png)
 
 The new verified skills also allow the user to see corresponding job postings that they can apply for.
+
 ![Verified Jobs Page](./client/src/assets/images/hiredUpVerifiedJob.png)
 
 ## Getting Started with the Code
