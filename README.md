@@ -9,10 +9,10 @@ We are working to connect with local non-profits to find the individuals who nee
 
 ## App features
 With the app users can sign up with either a new username and password or through their google accounts
-![Login Page](./client/src/assets/images/hiredUpLogin.png width="100" height="200")
+![Login Page](./client/src/assets/images/hiredUpLogin.png){width="100px" height="200px"}
 
 When the user first logs in they will see a screen telling them they need to schedule a meeting with a Hire Up admin. This meeting would be to verify our users and their skills.
-![Unverified Job Page](./client/src/assets/images/hiredUpUnverifiedJob.png width="100" height="200")
+![Unverified Job Page](./client/src/assets/images/hiredUpUnverifiedJob.png){width="100px" height="200px"}
 
 After clicking the button you are taken to our schedule page where the user is able to pick a date to meet an admin.
 ![Schedule Page](./client/src/assets/images/hiredUpSchedule.png width="100" height="200")
