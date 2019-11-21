@@ -9,6 +9,7 @@ We are working to connect with local non-profits to find the individuals who nee
 
 ## App Proposal
 [Written Proposal](https://docs.google.com/document/d/1-H_KQOKNLhcW2E5N2wVC8EJOMko52lT8BuZAoHtmsgM/edit)
+
 [Video](https://www.youtube.com/watch?v=oDis6TNTPyk&feature=youtu.be)
 
 ## App features
