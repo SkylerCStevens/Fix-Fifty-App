@@ -7,6 +7,10 @@ Hearing that Charlotte, NC was last in economic mobility amongst the largest cit
 ## Reaching the Community
 We are working to connect with local non-profits to find the individuals who need this app, as well as ensure they have the necessary resources to access it. Our first thought was NC Works. This organization has facilities where individuals can use computers to apply for jobs. It is usually where citizens in unemployment are directed. We also found the Goodwill Opportunity Center which has a job resource branch to help people find employment. By working with these kinds of programs we can reach our audience and help these centers quickly find solutions for those in need.
 
+## App Proposal
+[Written Proposal](https://docs.google.com/document/d/1-H_KQOKNLhcW2E5N2wVC8EJOMko52lT8BuZAoHtmsgM/edit)
+![Video](https://www.youtube.com/watch?v=oDis6TNTPyk&feature=youtu.be)
+
 ## App features
 With the app users can sign up with either a new username and password or through their google accounts
 
